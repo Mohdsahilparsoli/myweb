@@ -1,0 +1,21 @@
+/*----------------------------------------
+            general cssgeneral 
+------------------------------------------*/
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+.swiper-pointer-events {
+  touch-action: pan-y;
+  height: 100vh !important;
+}
+.swiper-pointer-events {
+  touch-action: pan-y;
+  position: absolute !important;
+  top: 0px;
+  z-index: -99 !important;
+}

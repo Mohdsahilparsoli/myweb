@@ -1,0 +1,71 @@
+/*----------------------------------------
+            general cssgeneral 
+------------------------------------------*/
+/* 
+body {
+  background-color: #040c18;
+} */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 1920px) {
+  #openmenu {
+    display: none;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+@media (max-width: 1599px) {
+}
+@media (max-width: 1399px) {
+}
+@media (max-width: 991px) {
+  #perimarymenu {
+    display: none;
+  }
+  .logo a img {
+    max-width: 200px;
+  }
+  .sechitem ul li a {
+    font-size: 30px;
+  }
+  #openmenu {
+    display: block;
+    font-size: 30px;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .container {
+    position: relative;
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 90px;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 575px) {
+  .logo a img {
+    max-width: 150px;
+  }
+  #openmenu,
+  .sechitem ul li a {
+    font-size: 20px;
+  }
+  .menu {
+    top: 81px;
+  }
+}
+@media (max-width: 428px) {
+}
