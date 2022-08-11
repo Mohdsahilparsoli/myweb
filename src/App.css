@@ -5,11 +5,11 @@
 body {
   background-color: #040c18;
 } */
-ul,
+/* ul,
 ol {
   padding: 0;
   margin: 0;
-}
+} */
 @media (max-width: 1920px) {
   #openmenu {
     display: none;
@@ -28,7 +28,7 @@ ol {
   #perimarymenu {
     display: none;
   }
-  .logo a img {
+  /* .logo a img {
     max-width: 200px;
   }
   .sechitem ul li a {
@@ -50,7 +50,7 @@ ol {
     width: 100%;
     top: 90px;
     padding: 10px;
-  }
+  } */
 }
 @media (max-width: 768px) {
 }
