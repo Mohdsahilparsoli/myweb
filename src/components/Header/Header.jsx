@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <>
       <div className="container">
-        <nav>
+        <nav className="fixed-top">
           <div className="row  align-items-center">
             <div className="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ">
               <div className="logo">

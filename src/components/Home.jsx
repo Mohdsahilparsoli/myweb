@@ -25,7 +25,7 @@ const Home = () => {
         <video autoPlay loop muted>
           <source src={Homevideo} />
         </video>
-        <Header />
+        <Header className="fixed-top" />
 
         <Swiper
           navigation={true}
