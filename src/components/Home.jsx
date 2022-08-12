@@ -32,14 +32,14 @@ const Home = () => {
           modules={[Navigation, Autoplay, Pagination]}
           slidesPerView={1}
           spaceBetween={100}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 4000 }}
           pagination={{ clickable: true }}
           className="mySwiper"
         >
           <SwiperSlide>
             <div className="container">
               <div className="row">
-                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div className="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                   <div className="banner  " data-aos="fade-right">
                     <div className="banerconetent">
                       <div className="chnagename ">
@@ -77,7 +77,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 col-xxl-6">
+                <div className="col-12 col-sm-3 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                   <div className="aboutslid">
                     <NavLink to={"#"} className="video-play-button">
                       <Myhomevideo />
@@ -90,7 +90,7 @@ const Home = () => {
           <SwiperSlide>
             <div className="container">
               <div className="row">
-                <div className="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 col-xxl-6">
+                <div className="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                   <div className="banner  ">
                     <div className="banerconetent">
                       <div className="chnagename ">
@@ -128,7 +128,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 col-xxl-6">
+                <div className="col-12 col-sm-3 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                   <div className="aboutslid">
                     <NavLink to={"#"} className="video-play-button">
                       <Myhomevideo />
@@ -141,7 +141,7 @@ const Home = () => {
           <SwiperSlide>
             <div className="container">
               <div className="row">
-                <div className="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 col-xxl-6">
+                <div className="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                   <div className="banner  ">
                     <div className="banerconetent">
                       <div className="chnagename ">
@@ -179,7 +179,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 col-xxl-6">
+                <div className="col-12 col-sm-3 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                   <div className="aboutslid">
                     <NavLink to={"#"} className="video-play-button">
                       <Myhomevideo />

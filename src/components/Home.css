@@ -107,12 +107,29 @@
   background-color: white;
   color: #040c18;
 }
-
-.swiper-button-prev,
+.swiper-button-prev {
+  left: 50% !important;
+  transform: translate(-45%, -45%);
+  top: 100% !important;
+  padding-bottom: 20px;
+  width: 80px !important;
+}
 .swiper-button-next {
-  display: none !important;
+  right: 50% !important;
+  transform: translate(-45%, -45%);
+  top: 100% !important;
+  padding-bottom: 20px;
+  width: 80px !important;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "" !important;
+  height: 4px;
+  width: 50px !important;
+  background-color: #e6b325;
+  border-radius: 4px;
+}
 .modal-content {
   width: 80%;
   margin: auto;
