@@ -1,4 +1,3 @@
-import "./header.css";
 import mylogo from "./logo.png";
 import { FaCartPlus } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
@@ -21,7 +20,7 @@ const Header = () => {
   return (
     <>
       <div className="container">
-        <nav className="fixed-top">
+        <nav>
           <div className="row  align-items-center">
             <div className="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ">
               <div className="logo">
@@ -147,6 +146,9 @@ const Header = () => {
                   <li>
                     <NavLink to={"#"}>Contact</NavLink>
                   </li>
+                  <li>
+                    <NavLink to={"#"}>Login</NavLink>
+                  </li>
                 </ul>
               </div>
               <div className="sechitem">
@@ -172,6 +174,7 @@ const Header = () => {
         </nav>
         <Outlet />
       </div>
+      <section className="servicesection"></section>
     </>
   );
 };
