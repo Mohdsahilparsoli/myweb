@@ -322,7 +322,7 @@ const Home = () => {
                   modules={[Navigation, Autoplay, Pagination]}
                   slidesPerView={1}
                   spaceBetween={100}
-                  autoplay={{ dela: 500 }}
+                  // autoplay={{ dela: 500 }}
                   // pagination={{ clickable: true }}
                 >
                   <SwiperSlide>
@@ -330,16 +330,58 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -349,16 +391,58 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -368,16 +452,58 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
                           <img src={Catcamera} alt="" className="img-fluid" />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
