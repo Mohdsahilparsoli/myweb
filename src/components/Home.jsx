@@ -48,7 +48,7 @@ const Home = () => {
             modules={[Navigation, Autoplay, Pagination]}
             slidesPerView={1}
             spaceBetween={100}
-            // autoplay={{ delay: 4000 }}
+            autoplay={{ delay: 3000 }}
             pagination={{ clickable: true }}
             className="mySwiper"
           >
@@ -322,7 +322,7 @@ const Home = () => {
                   modules={[Navigation, Autoplay, Pagination]}
                   slidesPerView={1}
                   spaceBetween={100}
-                  // autoplay={{ dela: 500 }}
+                  autoplay={{ delay: 3000 }}
                   // pagination={{ clickable: true }}
                 >
                   <SwiperSlide>
@@ -589,7 +589,7 @@ const Home = () => {
                   modules={[Navigation, Autoplay, Pagination]}
                   slidesPerView={1}
                   spaceBetween={100}
-                  // autoplay={{ dela: 500 }}
+                  autoplay={{ delay: 3000 }}
                   // pagination={{ clickable: true }}
                 >
                   <SwiperSlide>
@@ -1067,7 +1067,7 @@ const Home = () => {
                   modules={[Navigation, Autoplay, Pagination]}
                   slidesPerView={1}
                   spaceBetween={100}
-                  // autoplay={{ dela: 500 }}
+                  autoplay={{ delay: 3000 }}
                   // pagination={{ clickable: true }}
                 >
                   <SwiperSlide>
@@ -1478,7 +1478,7 @@ const Home = () => {
                   modules={[Navigation, Autoplay, Pagination]}
                   slidesPerView={1}
                   spaceBetween={100}
-                  // autoplay={{ dela: 500 }}
+                  autoplay={{ delay: 3000 }}
                   // pagination={{ clickable: true }}
                 >
                   <SwiperSlide>

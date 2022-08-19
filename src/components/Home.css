@@ -82,6 +82,14 @@ a {
   display: inline-block;
   font-weight: 600;
 }
+.allservicescard .swiper-wrapper {
+  padding: 60px 0px;
+}
+.growbusiness .swiper-wrapper,
+.workservice .swiper-wrapper,
+.bloghome .swiper-wrapper {
+  padding: 100px 0px;
+}
 
 /*=============================================================== General css end   ==================================*/
 /*=============================================================== Header section start ==================================*/
@@ -765,25 +773,33 @@ section.aboutproduct {
   color: #ffffff;
   font-weight: 500;
 }
-.allservicescard .swiper-button-prev:after,
-.allservicescard .swiper-button-next:after {
-  display: none;
+.allservicescard .swiper-button-prev {
+  left: auto;
+  right: 80px;
 }
-
+.allservicescard .swiper-button-prev,
+.allservicescard .swiper-button-next {
+  top: auto;
+  width: 60px;
+}
+/* 
 .allservicescard .swiper-button-prev,
 .allservicescard .swiper-button-next {
   background-color: red;
   top: auto;
+  width: 60px;
+  height: 100px;
 }
 .allservicescard .swiper-button-prev {
   background-image: url("../Assets/right.png");
   background-repeat: no-repeat;
-  left: 90%;
+  left: auto;
+  right: 80px;
 }
 .allservicescard .swiper-button-next {
-  background-image: url("../Assets/right.png");
+  background-image: url("../Assets/left.png");
   background-repeat: no-repeat;
-}
+} */
 /* =========================================== all services section end ================================ */
 
 /* =========================================== grow business section start ================================ */
@@ -925,7 +941,7 @@ section.aboutproduct {
 .protecttextdiv {
   padding: 100px 0px;
   position: relative;
-  margin-top: -90px;
+  margin-top: -185px;
 
   z-index: -3;
 }
@@ -940,11 +956,17 @@ section.aboutproduct {
   bottom: 0;
   z-index: -2;
 }
-/* .growbusiness .swiper-button-prev,
+.growbusiness .swiper-button-prev,
 .growbusiness .swiper-button-next {
   top: auto;
-  z-index: 99;
-} */
+  bottom: 0;
+  width: 60px;
+}
+.growbusiness .swiper-button-prev {
+  left: auto;
+  /* transform: translate(-95%); */
+  right: 80px;
+}
 /* =========================================== grow business section end ================================ */
 /* =========================================== lock business section end ================================ */
 .lock {
@@ -1440,19 +1462,22 @@ section.aboutproduct {
   color: #040c18;
   border-radius: 4px;
   text-align: center;
+  transition: 0.3s ease-in;
 }
 .bloghome .protectlogo span a {
   font-size: 18px;
   word-spacing: 3px;
   letter-spacing: 0.5px;
   color: #040c18;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 40px;
   transition: 0.3s ease-in;
 }
-
-.bloghome .protectlogo .tages a:hover {
-  color: #ffffff;
+.bloghome .protectlogo .tages:hover {
+  background: #040c18;
+}
+.bloghome .protectlogo .tages:hover a {
+  color: #fed000;
 }
 .bloghome .protectlogo .table {
   border-top: 1px solid #c6c6c6;
@@ -1487,14 +1512,16 @@ section.aboutproduct {
   font-weight: bold;
   letter-spacing: 0.5px;
   word-spacing: 5px;
-  transition: 0.3s ease-in;
   position: absolute;
   bottom: -46px;
   transition: 0.3s ease-in;
   width: 100%;
   left: 0;
 }
-
+.bloghome .productslider .table + a:hover {
+  background-color: #040c18;
+  color: #fed000;
+}
 .checkallpost {
   text-align: center;
   padding: 25px;
