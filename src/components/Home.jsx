@@ -7,7 +7,6 @@ import {
   FaLaptopCode,
   FaCheck,
   FaPhoneAlt,
-  FaFacebookF,
   FaInstagram,
   FaTwitter,
   FaYoutube,
@@ -23,17 +22,37 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 import { NavLink } from "react-router-dom";
 import "swiper/css/autoplay";
 import Myhomevideo from "./Myhomevideo";
-import Aos from "aos";
-// import firstbaner from "../Assets/one.jpg";
-// import secondbanner from "../Assets/two.jpg";
-// import threebanner from "../Assets/three.jpg";
 import Homevideo from "./myhomevideo.mp4";
 import Catcamera from "../Assets/catcamrea.jpg";
-
 import lock from "../Assets/lock.jpg";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Home = () => {
-  Aos.init();
+  const [bannerdata, updatedbaner] = useState([]);
+
+  console.log(` we are developer this error due to ${bannerdata}`);
+  const getbannerdata = async () => {
+    try {
+      const getdata = await fetch(`/homebanner`);
+      console.log(getdata);
+      if (getdata.status !== 200) {
+        console.log("there is an error due to api ");
+      } else {
+        console.log(" there is no eror api is working 100%");
+      }
+      const data = await getdata.json();
+      // console.log(data);
+      updatedbaner(data);
+    } catch (e) {
+      console.log(` there is an error in accesing data ${e} `);
+    }
+  };
+  useEffect(() => {
+    getbannerdata();
+  }, []);
+  // bannerdata
+  console.log(bannerdata);
   return (
     <>
       <section className="home ">
@@ -41,7 +60,7 @@ const Home = () => {
           <video autoPlay loop muted>
             <source src={Homevideo} />
           </video>
-          <Header className="fixed-top" />
+          <Header />
 
           <Swiper
             navigation={true}
@@ -52,15 +71,21 @@ const Home = () => {
             pagination={{ clickable: true }}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div className="banner  " data-aos="fade-right">
-                      <div className="banerconetent">
-                        <div className="chnagename ">
-                          <div className="who">We Are </div>
-                          <ul className="who-are-you">
+            {bannerdata.map((value, indx) => {
+              return (
+                <>
+                  <SwiperSlide>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                          <div className="banner">
+                            <div className="banerconetent">
+                              <div className="chnagename ">
+                                <div className="who">
+                                  {/* We Are High paid developer */}
+                                  {value.Heading}
+                                </div>
+                                {/* <ul className="who-are-you">
                             <li>
                               <span> React Developer</span>
                             </li>
@@ -77,134 +102,33 @@ const Home = () => {
                             <li>
                               <span>Full Stack Developer</span>
                             </li>
-                          </ul>
+                          </ul> */}
+                              </div>
+                              <p>{value.prea}</p>
+                            </div>
+                            <div className="Defaultbtn">
+                              <NavLink to={`/services/businesssecurity`}>
+                                Explore Our Services <FaArrowRight />
+                              </NavLink>
+                              <NavLink to={`/company/about`}>
+                                More About us!
+                              </NavLink>
+                            </div>
+                          </div>
                         </div>
-                        <p>
-                          Aakil Developer India's No 1 Web Development Company
-                          100% Trusted Web Company. We Provide Unique and Best
-                          quality Websites at a Very Affordable Price.
-                        </p>
-                      </div>
-                      <div className="Defaultbtn">
-                        <NavLink to={`/services/businesssecurity`}>
-                          Explore Our Services <FaArrowRight />
-                        </NavLink>
-                        <NavLink to={`/company/about`}>More About us!</NavLink>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12 col-sm-3 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div className="aboutslid">
-                      <NavLink to={"#"} className="video-play-button">
-                        <Myhomevideo />
-                      </NavLink>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div className="banner  ">
-                      <div className="banerconetent">
-                        <div className="chnagename ">
-                          <div className="who">We Are </div>
-                          <ul className="who-are-you">
-                            <li>
-                              <span> React Developer</span>
-                            </li>
-                            <li>
-                              <span> Ui Developer </span>
-                            </li>
-                            <li>
-                              <span>Mern Developer </span>
-                            </li>
-
-                            <li>
-                              <span>Next Js Developer</span>
-                            </li>
-                            <li>
-                              <span>Full Stack Developer</span>
-                            </li>
-                          </ul>
+                        <div className="col-12 col-sm-3 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                          <div className="aboutslid">
+                            <NavLink to={"#"} className="video-play-button">
+                              <Myhomevideo />
+                            </NavLink>
+                          </div>
                         </div>
-                        <p>
-                          Aakil Developer India's No 1 Web Development Company
-                          100% Trusted Web Company. We Provide Unique and Best
-                          quality Websites at a Very Affordable Price.
-                        </p>
-                      </div>
-                      <div className="Defaultbtn">
-                        <a href="#">
-                          Explore Our Services <FaArrowRight />
-                        </a>
-                        <a href="#"> More About us! </a>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-12 col-sm-3 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div className="aboutslid">
-                      <NavLink to={"#"} className="video-play-button">
-                        <Myhomevideo />
-                      </NavLink>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div className="banner  ">
-                      <div className="banerconetent">
-                        <div className="chnagename ">
-                          <div className="who">We Are </div>
-                          <ul className="who-are-you">
-                            <li>
-                              <span> React Developer</span>
-                            </li>
-                            <li>
-                              <span> Ui Developer </span>
-                            </li>
-                            <li>
-                              <span>Mern Developer </span>
-                            </li>
-
-                            <li>
-                              <span>Next Js Developer</span>
-                            </li>
-                            <li>
-                              <span>Full Stack Developer</span>
-                            </li>
-                          </ul>
-                        </div>
-                        <p>
-                          Aakil Developer India's No 1 Web Development Company
-                          100% Trusted Web Company. We Provide Unique and Best
-                          quality Websites at a Very Affordable Price.
-                        </p>
-                      </div>
-                      <div className="Defaultbtn">
-                        <a href="#">
-                          Explore Our Services <FaArrowRight />
-                        </a>
-                        <a href="#"> More About us! </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12 col-sm-3 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div className="aboutslid">
-                      <NavLink to={"#"} className="video-play-button">
-                        <Myhomevideo />
-                      </NavLink>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+                  </SwiperSlide>
+                </>
+              );
+            })}
           </Swiper>
         </div>
       </section>
