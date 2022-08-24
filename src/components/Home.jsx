@@ -13,7 +13,6 @@ import {
   FaEnvelope,
   FaFacebook,
 } from "react-icons/fa";
-import logo from "../Assets/logo.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,11 +21,9 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 import { NavLink } from "react-router-dom";
 import "swiper/css/autoplay";
 import Myhomevideo from "./Myhomevideo";
-import Homevideo from "./myhomevideo.mp4";
-import Catcamera from "../Assets/catcamrea.jpg";
-import lock from "../Assets/lock.jpg";
 import { useEffect } from "react";
 import { useState } from "react";
+import { logDOM } from "@testing-library/react";
 
 const Home = () => {
   const [bannerdata, updatedbaner] = useState([]);
@@ -58,7 +55,7 @@ const Home = () => {
       <section className="home ">
         <div className="mainvideo">
           <video autoPlay loop muted>
-            <source src={Homevideo} />
+            <source src={`myhomevideo.mp4`} />
           </video>
           <Header />
 
@@ -166,7 +163,7 @@ const Home = () => {
               <div className="productimg">
                 <div className="cameraimg">
                   <img
-                    src={Catcamera}
+                    src={`catcamrea.jpg`}
                     className="img-fluid"
                     alt="this is product image"
                   />
@@ -177,7 +174,7 @@ const Home = () => {
               <div className="productimg">
                 <div className="cameraimg">
                   <img
-                    src={Catcamera}
+                    src={`catcamrea.jpg`}
                     className="img-fluid"
                     alt="this is product image"
                   />
@@ -253,7 +250,11 @@ const Home = () => {
                     <div className="row">
                       <div className="col-lg-4">
                         <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
                           <div className="slidetext">
                             <span>
                               <p>
@@ -272,7 +273,11 @@ const Home = () => {
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
                           <div className="slidetext">
                             <span>
                               <p>
@@ -291,68 +296,11 @@ const Home = () => {
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
                           <div className="slidetext">
                             <span>
                               <p>
@@ -375,7 +323,11 @@ const Home = () => {
                     <div className="row">
                       <div className="col-lg-4">
                         <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
                           <div className="slidetext">
                             <span>
                               <p>
@@ -394,7 +346,11 @@ const Home = () => {
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
                           <div className="slidetext">
                             <span>
                               <p>
@@ -413,7 +369,84 @@ const Home = () => {
                       </div>
                       <div className="col-lg-4">
                         <div className="slidercard">
-                          <img src={Catcamera} alt="" className="img-fluid" />
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="row">
+                      <div className="col-lg-4">
+                        <div className="slidercard">
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-4">
+                        <div className="slidercard">
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
+                          <div className="slidetext">
+                            <span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse, odit?
+                              </p>
+                              <h5 className="text-center ">
+                                <a href="#">+</a>
+                              </h5>
+                            </span>
+                            <span className="servicename">
+                              <a href="#"> Visit the services</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-4">
+                        <div className="slidercard">
+                          <img
+                            src={`catcamrea.jpg`}
+                            alt=""
+                            className="img-fluid"
+                          />
                           <div className="slidetext">
                             <span>
                               <p>
@@ -538,7 +571,11 @@ const Home = () => {
                             <a href="">+</a>
                           </div>
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                         </div>
                       </div>
@@ -562,7 +599,11 @@ const Home = () => {
                             <a href="">+</a>
                           </div>
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                         </div>
                       </div>
@@ -586,84 +627,11 @@ const Home = () => {
                             <a href="">+</a>
                           </div>
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={"catcamrea.jpg"}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                         </div>
                       </div>
@@ -692,7 +660,11 @@ const Home = () => {
                             <a href="">+</a>
                           </div>
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                         </div>
                       </div>
@@ -716,7 +688,11 @@ const Home = () => {
                             <a href="">+</a>
                           </div>
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                         </div>
                       </div>
@@ -740,7 +716,100 @@ const Home = () => {
                             <a href="">+</a>
                           </div>
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="row">
+                      <div className="col-lg-4">
+                        <div className="sliderprotect">
+                          <div className="protectlogo">
+                            <h4>
+                              <a href="">
+                                <FaLaptopCode />
+                              </a>
+                            </h4>
+                            <h3>
+                              <a href="#">Smarter Business Security </a>{" "}
+                            </h3>
+                            <p>
+                              Ecommerce Agency London. Quality Results in 1
+                              Minute or Less! Search for Ecommerce Agency.
+                            </p>
+                          </div>
+                          <div className="pluslink">
+                            <a href="">+</a>
+                          </div>
+                          <div className="sliderprotectimg">
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-4">
+                        <div className="sliderprotect">
+                          <div className="protectlogo">
+                            <h4>
+                              <a href="">
+                                <FaLaptopCode />
+                              </a>
+                            </h4>
+                            <h3>
+                              <a href="#">Smarter Business Security </a>{" "}
+                            </h3>
+                            <p>
+                              Ecommerce Agency London. Quality Results in 1
+                              Minute or Less! Search for Ecommerce Agency.
+                            </p>
+                          </div>
+                          <div className="pluslink">
+                            <a href="">+</a>
+                          </div>
+                          <div className="sliderprotectimg">
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-4">
+                        <div className="sliderprotect">
+                          <div className="protectlogo">
+                            <h4>
+                              <a href="">
+                                <FaLaptopCode />
+                              </a>
+                            </h4>
+                            <h3>
+                              <a href="#">Smarter Business Security </a>{" "}
+                            </h3>
+                            <p>
+                              Ecommerce Agency London. Quality Results in 1
+                              Minute or Less! Search for Ecommerce Agency.
+                            </p>
+                          </div>
+                          <div className="pluslink">
+                            <a href="">+</a>
+                          </div>
+                          <div className="sliderprotectimg">
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                         </div>
                       </div>
@@ -773,7 +842,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="securityimg">
-                <img src={lock} alt="lock img " className="img-fluid" />
+                <img src={`lock.jpg`} alt="lock img " className="img-fluid" />
               </div>
             </div>
             <div className="col-lg-6">
@@ -858,13 +927,13 @@ const Home = () => {
               </div>
               <div className="col-lg-6">
                 <div className="securitycardimg">
-                  <img src={lock} alt="lockimg" className="img-fluid" />
+                  <img src={`lock.jpg`} alt="lockimg" className="img-fluid" />
                 </div>
               </div>
 
               <div className="col-lg-6">
                 <div className="securitycardimg">
-                  <img src={lock} alt="lockimg" className="img-fluid" />
+                  <img src={`lock.jpg`} alt="lockimg" className="img-fluid" />
                 </div>
               </div>
               <div className="col-lg-6">
@@ -933,7 +1002,7 @@ const Home = () => {
 
               <div className="col-lg-6">
                 <div className="securitycardimg">
-                  <img src={lock} alt="lockimg" className="img-fluid" />
+                  <img src={`lock.jpg`} alt="lockimg" className="img-fluid" />
                 </div>
               </div>
             </div>
@@ -999,7 +1068,11 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <h3>
@@ -1021,7 +1094,11 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <h3>
@@ -1043,77 +1120,11 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <h3>
@@ -1139,7 +1150,11 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <h3>
@@ -1161,7 +1176,11 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <h3>
@@ -1183,7 +1202,93 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
+                          </div>
+                          <div className="protectlogo">
+                            <h3>
+                              <a href="#">Smarter Business Security </a>
+                            </h3>
+                            <p>
+                              Ecommerce Agency London. Quality Results in 1
+                              Minute or Less! Search for Ecommerce Agency.
+                            </p>
+
+                            <div className="Defaultbtn">
+                              <a href="">
+                                Read More <FaArrowRight />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="row">
+                      <div className="col-lg-4">
+                        <div className="sliderprotect">
+                          <div className="sliderprotectimg">
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
+                          </div>
+                          <div className="protectlogo">
+                            <h3>
+                              <a href="#">Smarter Business Security </a>
+                            </h3>
+                            <p>
+                              Ecommerce Agency London. Quality Results in 1
+                              Minute or Less! Search for Ecommerce Agency.
+                            </p>
+
+                            <div className="Defaultbtn">
+                              <a href="">
+                                Read More <FaArrowRight />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-4">
+                        <div className="sliderprotect">
+                          <div className="sliderprotectimg">
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
+                          </div>
+                          <div className="protectlogo">
+                            <h3>
+                              <a href="#">Smarter Business Security </a>
+                            </h3>
+                            <p>
+                              Ecommerce Agency London. Quality Results in 1
+                              Minute or Less! Search for Ecommerce Agency.
+                            </p>
+
+                            <div className="Defaultbtn">
+                              <a href="">
+                                Read More <FaArrowRight />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-4">
+                        <div className="sliderprotect">
+                          <div className="sliderprotectimg">
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <h3>
@@ -1410,7 +1515,11 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <span className="tages">
@@ -1436,7 +1545,11 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <span className="tages">
@@ -1462,7 +1575,11 @@ const Home = () => {
                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="sliderprotectimg">
-                            <img src={Catcamera} alt="" className="img-fluid" />
+                            <img
+                              src={`catcamrea.jpg`}
+                              alt=""
+                              className="img-fluid"
+                            />
                           </div>
                           <div className="protectlogo">
                             <span className="tages">
@@ -1510,7 +1627,7 @@ const Home = () => {
                       <div className="logo">
                         <a href="#">
                           <img
-                            src={logo}
+                            src={`logo.png`}
                             alt="footer logo"
                             className="img-fluid"
                           />

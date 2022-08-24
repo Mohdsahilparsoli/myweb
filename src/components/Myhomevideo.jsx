@@ -8,7 +8,6 @@ import {
   FaTwitter,
   FaShare,
 } from "react-icons/fa";
-import Homevideo from "./myhomevideo.mp4";
 function Myhomevideo() {
   const [show, setShow] = useState(false);
 
@@ -56,7 +55,7 @@ function Myhomevideo() {
         </Modal.Header>
         <Modal.Body>
           <video loop autoPlay muted>
-            <source src={Homevideo} />
+            <source src={`myhomevideo.mp4`} />
             this video does not supprot your browser
           </video>
         </Modal.Body>

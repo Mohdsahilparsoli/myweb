@@ -1,4 +1,3 @@
-import mylogo from "./logo.png";
 import { FaCartPlus } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { useEffect } from "react";
@@ -25,7 +24,11 @@ const Header = () => {
             <div className="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ">
               <div className="logo">
                 <NavLink to={"/"}>
-                  <img src={mylogo} alt="companylogo" className="img-fluid" />
+                  <img
+                    src={`logo.png`}
+                    alt="companylogo"
+                    className="img-fluid"
+                  />
                   {/* <h1> Sahil</h1> */}
                 </NavLink>
               </div>
