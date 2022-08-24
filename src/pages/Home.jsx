@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import "../App.css";
-import Header from "./Header/Header";
+import Header from "../components/Header/Header";
 import {
   FaArrowRight,
   FaLaptopCode,
@@ -20,10 +20,10 @@ import "./Home.css";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { NavLink } from "react-router-dom";
 import "swiper/css/autoplay";
-import Myhomevideo from "./Myhomevideo";
+// import Myhomevideo from "./Myhomevideo";
+import Myhomevideo from "../components/Myhomevideo";
 import { useEffect } from "react";
 import { useState } from "react";
-import { logDOM } from "@testing-library/react";
 
 const Home = () => {
   const [bannerdata, updatedbaner] = useState([]);
@@ -64,7 +64,7 @@ const Home = () => {
             modules={[Navigation, Autoplay, Pagination]}
             slidesPerView={1}
             spaceBetween={100}
-            autoplay={{ delay: 3000 }}
+            // autoplay={{ delay: 3000 }}
             pagination={{ clickable: true }}
             className="mySwiper"
           >
