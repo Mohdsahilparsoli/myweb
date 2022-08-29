@@ -147,7 +147,7 @@ const Header = () => {
                     <NavLink to={"#"}>Contact</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"#"}>Login</NavLink>
+                    <NavLink to={"/login"}>Login</NavLink>
                   </li>
                 </ul>
               </div>

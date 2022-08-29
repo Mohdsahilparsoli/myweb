@@ -1780,3 +1780,81 @@ section.singalblog {
   border-color: #eaeaea;
 }
 /* blog content page end */
+/* login page */
+
+.loginme {
+  padding: 40px 0px;
+}
+.loginme h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  color: #0a1528;
+  font-weight: 400;
+}
+.loginme form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 0px;
+}
+.loginme form label {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #0a1528;
+  letter-spacing: 0.3px;
+  word-spacing: 3px;
+}
+
+.loginme form input {
+  margin-bottom: 10px;
+  max-width: 500px;
+  border-radius: 4px;
+  width: 100%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  outline: none;
+  height: 70px;
+  line-height: 70px;
+  font-size: 18px;
+  padding-left: 20px;
+  color: #0a1528;
+  border: 2px solid #eaeaea;
+}
+
+.loginme form .nowlogin,
+.loginme .google {
+  display: inline-block;
+  width: 500px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  margin: 25px 0px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: #fed000;
+  border-radius: 4px;
+  color: #0a1528;
+}
+.loginme form .nowlogin:hover {
+  background: #0a1528;
+  color: #fed000;
+}
+.loginme span {
+  font-size: 16px;
+  color: #0a1528;
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+}
+.loginme span a {
+  color: #fed000;
+}
+.loginme .google {
+  background: transparent;
+  border: 2px solid #eaeaea;
+}
+.loginme .google:hover {
+  background: #0a1528;
+  color: #fed000;
+}
+/* login page end */
