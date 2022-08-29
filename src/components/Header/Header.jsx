@@ -37,12 +37,7 @@ const Header = () => {
               <div className="menu ">
                 <ul id="perimarymenu">
                   <li>
-                    <NavLink
-                      to={"/"}
-                      state={({ isActive }) => (isActive ? activestyle : null)}
-                    >
-                      home
-                    </NavLink>
+                    <NavLink to={"/"}> home</NavLink>
                   </li>
                   <li>
                     <NavLink to={""}>
@@ -123,13 +118,15 @@ const Header = () => {
                       News Media
                       <ul className="sub-menu blogmenu">
                         <li>
-                          <NavLink to={"#"}>Blog Grid</NavLink>
+                          <NavLink to={"/our-blogs"}>Our Blogs</NavLink>
                         </li>
                         <li>
                           <NavLink to={"#"}>Blog Standard</NavLink>
                         </li>
                         <li>
-                          <NavLink to={"#"}>Single Blog Post</NavLink>
+                          <NavLink to={"/singal-blog"}>
+                            Single Blog page
+                          </NavLink>
                         </li>
                         <li>
                           <NavLink to={"#"}>Case Studies Modern</NavLink>

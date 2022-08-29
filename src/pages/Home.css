@@ -829,6 +829,10 @@ section.aboutproduct {
 
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 47px 0px;
 }
+
+.allblogs .sliderprotect {
+  margin-top: 80px;
+}
 .sliderprotectimg {
   height: 300px;
   overflow: hidden;
@@ -1618,4 +1622,161 @@ section.aboutproduct {
 .footersocilalinks a:hover {
   color: #fed000;
 }
-/*=================================footer section end ==============================*/ ;
+/*=================================footer section end ==============================*/
+
+/* blog page css */
+section.bloghome.allblogs {
+  padding-top: 0px;
+}
+.allblogheader {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/blogimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.allblogcentent {
+  padding: 200px 0;
+}
+
+.allblogcentent h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  padding: 0;
+  text-transform: capitalize;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+}
+
+.loaction {
+  padding: 40px 0px;
+}
+
+.loaction h3 a {
+  color: #0a1528;
+}
+
+.loaction h3 span {
+  background-color: #fed000;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+/* blog content page */
+
+section.singalblog {
+  padding: 70px 0px;
+}
+.blogfooter {
+  padding: 60px 0px;
+}
+.allblogheader .blogsearchbar h1 {
+  text-align: center;
+}
+
+.blogbody {
+  padding: 30px 30px;
+}
+.blogcontent {
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 47px 0px;
+}
+.blogbody h1 {
+  font-size: 50px;
+  line-height: 60px;
+
+  letter-spacing: 3px;
+  color: #0a1528;
+  text-align: left;
+  font-weight: 700;
+}
+
+.aboutblog {
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+.aboutblog a {
+  font-weight: 200;
+  color: #0a1528;
+  padding-right: 50px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in;
+}
+.aboutblog a:hover {
+  color: #fed000;
+}
+.blogbody span {
+  padding-right: 50px;
+  color: #999999;
+}
+.blogimg {
+  padding: 120px 0px;
+}
+.blogfooter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tag a {
+  width: 150px;
+  height: 50px;
+  background: #fed000;
+  text-align: left;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: #0a1528;
+}
+.tag a:hover {
+  background-color: #0a1528;
+  color: #fed000;
+}
+.blogwriter {
+  border: 10px solid #eaeaea;
+  padding: 60px 20px 60px 60px;
+  margin-top: 60px;
+}
+.blogownercontent {
+  padding-left: 30px;
+}
+.blogfooter h3,
+.blogownercontent h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+.share a,
+.blogownercontent a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #0a1528;
+  margin-right: 10px;
+  border-radius: 100%;
+  border: 3px solid #eaeaea;
+}
+.share a:hover,
+.blogownercontent a:hover {
+  background-color: #0a1528;
+  color: #e6b325;
+  border-color: #eaeaea;
+}
+/* blog content page end */

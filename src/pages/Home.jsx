@@ -7,11 +7,6 @@ import {
   FaLaptopCode,
   FaCheck,
   FaPhoneAlt,
-  FaInstagram,
-  FaTwitter,
-  FaYoutube,
-  FaEnvelope,
-  FaFacebook,
 } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -20,10 +15,11 @@ import "./Home.css";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { NavLink } from "react-router-dom";
 import "swiper/css/autoplay";
-// import Myhomevideo from "./Myhomevideo";
 import Myhomevideo from "../components/Myhomevideo";
 import { useEffect } from "react";
 import { useState } from "react";
+import Footer from "../components/Footer";
+import Blog from "../components/Blog";
 
 const Home = () => {
   const [bannerdata, updatedbaner] = useState([]);
@@ -1489,276 +1485,31 @@ const Home = () => {
 
       <section className="bloghome">
         <div className="container">
-          <div className="row">
-            <div className="clo-lg-12">
-              <div className="articals">
-                <p>Security Tips & Resources</p>
-                <h3>Recent Articles</h3>
-              </div>
+          <div className="articals">
+            <p>Security Tips & Resources</p>
+            <h3>Recent Articles</h3>
+          </div>
 
-              <div className="productslider">
-                <Swiper
-                  pagination={{
-                    type: "progressbar",
-                  }}
-                  navigation={true}
-                  // modules={[Pagination, Navigation]}
-                  className="mySwiper"
-                  modules={[Navigation, Autoplay, Pagination]}
-                  slidesPerView={1}
-                  spaceBetween={100}
-                  autoplay={{ delay: 3000 }}
-                  // pagination={{ clickable: true }}
-                >
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <span className="tages">
-                              <a href="">It work </a>,<a href=""> Cctv work</a>
-                            </span>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                            <div className="table">
-                              <span className="wariter"> 10 july 2020</span>
-                              <span className="wariter"> Md Sahil</span>
-                            </div>
-                            <a href="">
-                              Read More <FaArrowRight />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <span className="tages">
-                              <a href="">It work </a>,<a href=""> Cctv work</a>
-                            </span>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                            <div className="table">
-                              <span className="wariter"> 10 july 2020</span>
-                              <span className="wariter"> Md Sahil</span>
-                            </div>
-                            <a href="">
-                              Read More <FaArrowRight />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <span className="tages">
-                              <a href="">It work </a>,<a href=""> Cctv work</a>
-                            </span>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                            <div className="table">
-                              <span className="wariter"> 10 july 2020</span>
-                              <span className="wariter"> Md Sahil</span>
-                            </div>
-                            <a href="">
-                              Read More <FaArrowRight />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-                <div className="checkallpost">
-                  <a href="#">
-                    Check All Blog Posts <FaArrowRight />
-                  </a>
-                </div>
-              </div>
+          <div className="productslider">
+            <div className="row">
+              {[1, 2, 3].map(() => {
+                return (
+                  <>
+                    <Blog />
+                  </>
+                );
+              })}
+            </div>
+            <div className="checkallpost pt-4 pt-sm-4">
+              <NavLink to={`/our-blogs`}>
+                Check All Blog Posts <FaArrowRight />
+              </NavLink>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="row">
-                <div className="col-lg-8">
-                  <div className="row">
-                    <div className="col-lg-3">
-                      <div className="logo">
-                        <a href="#">
-                          <img
-                            src={`logo.png`}
-                            alt="footer logo"
-                            className="img-fluid"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-lg-3">
-                      <div className="footerlink">
-                        <h3> Company</h3>
-                        <ul>
-                          <li>
-                            <a href="#"> About us </a>
-                          </li>
-                          <li>
-                            <a href="#"> Leadship</a>
-                          </li>
-                          <li>
-                            <a href="#"> News & Media </a>
-                          </li>
-                          <li>
-                            <a href="#"> Shop</a>
-                          </li>
-                          <li>
-                            <a href="#"> Reviws</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-lg-3">
-                      <div className="footerlink">
-                        <h3>Services</h3>
-                        <ul>
-                          <li>
-                            <a href="#">Business Security</a>
-                          </li>
-                          <li>
-                            <a href="#">Fire Detection</a>
-                          </li>
-                          <li>
-                            <a href="#"> Acess Control</a>
-                          </li>
-                          <li>
-                            <a href="#">Alarm System</a>
-                          </li>
-                          <li>
-                            <a href="#">CCTV & Video</a>
-                          </li>
-                          <li>
-                            <a href="#"> Smart Home</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-lg-3">
-                      <div className="footerlink">
-                        <h3> Help</h3>
-                        <ul>
-                          <li>
-                            <a href="#">Knowledge base</a>
-                          </li>
-                          <li>
-                            <a href="#"> Security Resource</a>
-                          </li>
-                          <li>
-                            <a href="#"> Terms & Conditions</a>
-                          </li>
-                          <li>
-                            <a href="#"> Shipping Policy</a>
-                          </li>
-                          <li>
-                            <a href="#"> Contact us </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4">
-                  <div className="quicsupport">
-                    <p>
-                      If you have any questions or need help, feel free to
-                      contact with our team.
-                    </p>
-                    <ul>
-                      <li>
-                        Send us Email: <br />
-                        <a href="#">
-                          <FaEnvelope /> mohdshailparsoli@gmail.com
-                        </a>
-                      </li>
-                      <li>
-                        Call us Todya: <br />
-                        <a href="#">
-                          <FaPhoneAlt /> 9818186876
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-6">
-              <div className="copright">
-                <p>
-                  ©2022 Lockey, All Rights Reserved. this web is Develop by{" "}
-                  <a href="#">Md Sahil</a>
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="footersocilalinks">
-                <a href="#">
-                  <FaFacebook /> Facebook
-                </a>
-                <a href="#">
-                  <FaTwitter /> Twitter
-                </a>
-                <a href="#">
-                  {" "}
-                  <FaInstagram /> Instagram
-                </a>
-                <a href="#">
-                  {" "}
-                  <FaYoutube /> Youtube
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </>
   );
 };
