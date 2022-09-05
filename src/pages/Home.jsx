@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Home.css";
 import { Autoplay, Navigation, Pagination } from "swiper";
+import "./Home.css";
 import { NavLink } from "react-router-dom";
 import "swiper/css/autoplay";
 import Myhomevideo from "../components/Myhomevideo";
@@ -20,6 +21,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Footer from "../components/Footer";
 import Blog from "../components/Blog";
+import Casestudycart from "../components/Casestudycart";
+import Solutions from "../components/Solutions";
 
 const Home = () => {
   const [bannerdata, updatedbaner] = useState([]);
@@ -206,322 +209,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section className="allservicescard">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="row">
-                <div className="col-lg-8">
-                  <div className="allserviceintro">
-                    <h1 className="text-white">Solutions For Your Security</h1>
-                    <p className="text-white">
-                      Reduce the probability of crime happening on your
-                      property, it will reduce or eliminate any liability that
-                      falls on you if you can show you have solid with security
-                      systems in place.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-8">
-              <div className="productslider">
-                <Swiper
-                  pagination={{
-                    type: "progressbar",
-                  }}
-                  navigation={true}
-                  // modules={[Pagination, Navigation]}
-                  className="mySwiper"
-                  modules={[Navigation, Autoplay, Pagination]}
-                  slidesPerView={1}
-                  spaceBetween={100}
-                  autoplay={{ delay: 3000 }}
-                  // pagination={{ clickable: true }}
-                >
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="slidercard">
-                          <img
-                            src={`catcamrea.jpg`}
-                            alt=""
-                            className="img-fluid"
-                          />
-                          <div className="slidetext">
-                            <span>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse, odit?
-                              </p>
-                              <h5 className="text-center ">
-                                <a href="#">+</a>
-                              </h5>
-                            </span>
-                            <span className="servicename">
-                              <a href="#"> Visit the services</a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-              <div className="productsliderpera">
-                <p>
-                  For the Security and IT directors ensuring our places of work
-                  For the Chief Officers shaping the smart businesses of
-                  tomorrow. We delivers powerful and insightful security
-                  solutions that enable protectors to drive forward. As the
-                  leader in home security, we can help you customize a home
-                  security system to meet your safety needs.
-                  <a href="">
-                    . Schedule A Visit{" "}
-                    <span>
-                      <FaArrowRight />
-                    </span>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-4  ">
-              <div className="allproductsidebar">
-                <div className="sidebarlogos">
-                  <span>
-                    <FaLaptopCode />
-                  </span>
-                </div>
-                <div className="sidebarcontent">
-                  <h3 className="text-white">Easy To Setup And Use</h3>
-                  <p>
-                    We’ll customize the right system for your home’s needs. If
-                    someone forces you to disarm system, your Duress PIN will
-                    secretly alert authorities.
-                  </p>
-                </div>
-              </div>
-              <div className="allproductsidebar">
-                <div className="sidebarlogos">
-                  <span>
-                    <FaLaptopCode />
-                  </span>
-                </div>
-                <div className="sidebarcontent">
-                  <h3 className="text-white">Easy To Setup And Use</h3>
-                  <p>
-                    We’ll customize the right system for your home’s needs. If
-                    someone forces you to disarm system, your Duress PIN will
-                    secretly alert authorities.
-                  </p>
-                </div>
-              </div>
-
-              <div className="Defaultbtn">
-                <a href="#">
-                  Product & solutions <FaArrowRight />
-                </a>
-                <a href="#"> Contact us </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<Solutions/>
 
       <section className="growbusiness">
         <div className="growbuniessheading mx-auto">
@@ -536,18 +224,21 @@ const Home = () => {
                   pagination={{
                     type: "progressbar",
                   }}
+
                   navigation={true}
-                  // modules={[Pagination, Navigation]}
+                  loop={true}
                   className="mySwiper"
                   modules={[Navigation, Autoplay, Pagination]}
                   slidesPerView={1}
                   spaceBetween={100}
                   autoplay={{ delay: 3000 }}
-                  // pagination={{ clickable: true }}
+                 
                 >
                   <SwiperSlide>
                     <div className="row">
-                      <div className="col-lg-4">
+                   {[1,2,3].map(()=>{
+                    return(<>
+                       <div className="col-lg-4">
                         <div className="sliderprotect">
                           <div className="protectlogo">
                             <h4>
@@ -574,243 +265,11 @@ const Home = () => {
                             />
                           </div>
                         </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img
-                              src={"catcamrea.jpg"}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                        </div>
-                      </div>
+                      </div></>)
+                   })}
                     </div>
                   </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="protectlogo">
-                            <h4>
-                              <a href="">
-                                <FaLaptopCode />
-                              </a>
-                            </h4>
-                            <h3>
-                              <a href="#">Smarter Business Security </a>{" "}
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-                          </div>
-                          <div className="pluslink">
-                            <a href="">+</a>
-                          </div>
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
                 </Swiper>
               </div>
             </div>
@@ -1040,333 +499,59 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="workservice">
-        <div className="container">
-          <div className="row">
-            <div className="clo-lg-12">
               <div className="productslider">
                 <Swiper
                   pagination={{
                     type: "progressbar",
                   }}
                   navigation={true}
-                  // modules={[Pagination, Navigation]}
                   className="mySwiper"
                   modules={[Navigation, Autoplay, Pagination]}
                   slidesPerView={1}
                   spaceBetween={100}
                   autoplay={{ delay: 3000 }}
-                  // pagination={{ clickable: true }}
+                  loop={true}
                 >
                   <SwiperSlide>
+                    <div className="container">
                     <div className="row">
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
+                      {
+                        [1,2,3].map(()=>{
+                          return(<>
+                            <div className="col-lg-4">
+                                <Casestudycart/>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                          </>)
+                        })
+                      }
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="sliderprotect">
-                          <div className="sliderprotectimg">
-                            <img
-                              src={`catcamrea.jpg`}
-                              alt=""
-                              className="img-fluid"
-                            />
-                          </div>
-                          <div className="protectlogo">
-                            <h3>
-                              <a href="#">Smarter Business Security </a>
-                            </h3>
-                            <p>
-                              Ecommerce Agency London. Quality Results in 1
-                              Minute or Less! Search for Ecommerce Agency.
-                            </p>
-
-                            <div className="Defaultbtn">
-                              <a href="">
-                                Read More <FaArrowRight />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </SwiperSlide>
                 </Swiper>
               </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section className="chose">
         <div className="container">
-          <div className="row">
             <h1> More Reasons to Choose Us!</h1>
-            <div className="col-lg-12">
               <div className="Defaultbtn">
-                <a href="#">
-                  <span>
-                    <FaCheck />
-                  </span>
-                  Morder tech web
-                </a>
-                <a href="#">
-                  <span>
-                    <FaCheck />
-                  </span>
-                  Morder tech web
-                </a>
-                <a href="#">
-                  <span>
-                    <FaCheck />
-                  </span>
-                  Morder tech web
-                </a>
-                <a href="#">
-                  <span>
-                    <FaCheck />
-                  </span>
-                  Morder tech web
-                </a>
-                <a href="#">
-                  <span>
-                    <FaCheck />
-                  </span>
-                  Morder tech web
-                </a>
-                <a href="#">
-                  <span>
-                    <FaCheck />
-                  </span>
-                  Morder tech web
-                </a>
+                    {
+                      [1,2,3,4,5,6,7,8,9].map(()=>{
+                        return(<>
+                        <a href="#"><span><FaCheck /></span> Morder tech web</a>
+                        </>)
+                      })
+                    }
               </div>
-
               <div>
                 <p className="text-center">
                   Keep An Eye On Everything With Our Video Security.
                   <a href="#"> Get A Recommendation </a>
                 </p>
               </div>
-            </div>
-          </div>
         </div>
       </section>
-
       <section className="quate">
         <div className="container">
           <div className="row">

@@ -121,21 +121,19 @@ const Header = () => {
                           <NavLink to={"/our-blogs"}>Our Blogs</NavLink>
                         </li>
                         <li>
-                          <NavLink to={"#"}>Blog Standard</NavLink>
+                          <NavLink to={"/blog-standard"}>Blog Standard</NavLink>
                         </li>
                         <li>
-                          <NavLink to={"/singal-blog"}>
+                          <NavLink to={"/singal-blogpage"}>
                             Single Blog page
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink to={"#"}>Case Studies Modern</NavLink>
+                          <NavLink to={"/allcasestudy"}>Case Studies Modern</NavLink>
                         </li>
+                       
                         <li>
-                          <NavLink to={"#"}>Case Studies Grid</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={"#"}>Single Case Study</NavLink>
+                          <NavLink to={"/sinagl-case-study"}>Single Case Study</NavLink>
                         </li>
                       </ul>
                     </NavLink>
@@ -144,7 +142,7 @@ const Header = () => {
                     <NavLink to={"#"}>Shop</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"#"}>Contact</NavLink>
+                    <NavLink to={"/contact"}>Contact</NavLink>
                   </li>
                   <li>
                     <NavLink to={"/login"}>Login</NavLink>
