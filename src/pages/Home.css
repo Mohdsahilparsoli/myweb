@@ -80,7 +80,7 @@ a {
   word-spacing: 3px;
   transition: 0.3s ease-in;
   display: inline-block;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .allservicescard .swiper-wrapper {
   padding: 60px 0px;
@@ -2196,7 +2196,7 @@ section.touch {
   padding: 90px 0px;
   
   /* box-shadow: rgb(100 100 111 / 20%) 0px 7px 47px 0px; */
-  margin-bottom: 60px;
+ 
 }
 .contanct-info {
   background: #fed000;
@@ -2293,6 +2293,71 @@ section.touch {
   background-color: #0a1528;
   color: #fed000;
   border-color: #0a1528;
+}
+.contactaccorerdian{
+  padding: 90px 0px;
+}
+.topaccordingedata {
+  max-width: 881px;
+  margin: 0 auto;
+}
+.topaccordingedata h4 {
+  font-size: 45px;
+  text-align: center;
+  line-height: 90px;
+  letter-spacing: 0.5px ;
+  word-spacing: 1.5px;
+  font-weight: 600;
+}
+.topaccordingedata p {
+  text-align: center;
+  padding: 40px 0px;
+}
+.accordion-button:not(.collapsed)::after{
+  color: red;
+}
+.accordien {
+  padding-top: 30px;
+  border-top: 10px solid #fed000;
+  padding-bottom: 70px;
+  margin-top: 18px;
+}
+h2.accordion-header button {
+  font-size: 30px;
+}
+.accordion-item{
+  margin: 15px 0px;
+  border: none;
+  border: 2px solid #eaeaea;
+}
+.accordion-button:focus{
+  box-shadow: none;
+  border-color: #eaeaea ;
+}
+.accordion-button{
+  border: none;
+}
+
+.accordion-button{
+  border: 2px solid #eaeaea;
+}
+.accordion-item{
+  border: none;
+}
+.accordion-body p {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 10px 0px;
+}
+
+.accordion-button:not(.collapsed){
+  color: #fed000;
+  background-color: #0a1528;
+  border-color: #0a1528;
+  box-shadow: none;
+} 
+h2.accordion-header {
+  margin-top: 15px;
 }
 /* login page */
 
@@ -2476,3 +2541,225 @@ section.touch {
 }
 
 /* login page end */
+/* product page */
+
+/* shop page */
+
+.shoppage{
+
+  padding: 70px 0px;
+}
+
+
+
+.product {
+  position: relative;
+  margin: 15px 0px;
+}
+.productdetalis {
+  position: absolute;
+}
+
+.productinfo{
+  position: absolute;
+  background-color: #ffff;
+  width: 100%;
+  bottom: 0px;
+}
+.productinfo a  {
+  display: block;
+  margin: 0 auto;
+}
+
+.product a:first-child{
+  width: 100%;
+}
+.product a:first-child img {
+  width: 100%;
+}
+
+.productinfo h6{
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px ;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #0a1528;
+  text-transform: capitalize;
+
+}
+
+.productinfo .addtocart {
+  
+  padding: 0px;
+  font-size: 0px;
+  transition: 0.3s ease-in;
+  text-align: center; 
+}
+
+
+
+
+.product:hover  .productinfo .addtocart{
+  width: 100%;
+  font-size: 25px;
+  padding: 10px 0px;
+  text-transform: capitalize;
+  color: #0a1528;
+  background-color: #fed000; 
+  transition: 0.3s ease-in;
+  margin-top: 10px;
+
+}
+
+.product .productinfo .addtocart:hover{
+  background-color: #0a1528 ;
+  color: #fed000 ;
+}
+
+.shoppage .shorting {
+
+  padding: 0px 10px 40px 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+ 
+
+}
+.shoppage .shorting h6 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.shoppage .shorting select {
+  padding: 16px;
+  border: 0.5px solid #c4c4c4;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 300px;
+  width: 100%;
+  outline: none;
+  appearance: none;
+  border-radius: 30px;
+  text-transform: capitalize;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px;
+  background-image: url(../../public/dropdown.png);
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position:90% center;
+  
+}
+.shoppage .tages,
+.shoppage .productsearch ,
+.shoppage .productcategory{
+  padding: 10px 30px;
+}
+.shoppage .tages h6,
+.shoppage .productsearch h6,
+.shoppage .productcategory h6{
+  text-align: left;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #0a1528;
+  padding-bottom: 30px;
+}
+
+.shoppage .productcategory li {
+  padding: 25px 15px;
+  background-color: #0a1528;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+
+.shoppage .productcategory li a {
+  display: flex;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.shoppage .productcategory li:hover{
+  background-color: #fed000;
+}
+.shoppage .productcategory li:hover a{
+  color: #0a1528;
+  font-weight: 400;
+}
+.shoppage .tages,
+.shoppage .productsearch{
+  margin-top: 20PX;
+}
+
+.shoppage .productsearch .search{
+  display: flex;
+  padding: 20px;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 30px;
+  align-items: center;
+}
+.shoppage .productsearch  input {
+  width: 80%;
+  outline: none;
+  font-size: 18px;
+  color: #0a1528;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.shoppage .productsearch a {
+  font-size: 25px;
+  color: #0a1528;
+  transition: 0.3s ease-in;
+}
+.shoppage .productsearch a:hover{
+  color: #fed000;
+}
+
+.shoppage  .productags{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shoppage  .productags a {
+  margin: 10px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #fed000;
+  color: #0a1528;
+  font-weight: 500;
+  transition: 0.3s ease-in;
+
+}
+.shoppage  .productags a:hover{
+  background-color: #0a1528;
+  color: #fed000;
+}
+
+.pagenation {
+  width: 100%;
+  text-align: center;
+  padding-top:60px ;
+}
+
+.pagenation > a {
+  font-size: 20px;
+  color: #0a1528;
+  line-height: 25px;
+  padding: 10px;
+  margin: 0px 15px;
+  border: 0.5px solid #c4c4c4;
+  display:inline-block;
+  width: 50px;
+}
