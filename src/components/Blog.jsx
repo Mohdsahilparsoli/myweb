@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import { NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const Blog = (props) => {
   return (
     <>
@@ -13,7 +13,7 @@ const Blog = (props) => {
               <a href="">It work </a>,<a href=""> Cctv work</a>
             </span>
             <h3>
-              <NavLink to={props.bloglink}>Smarter Business Security </NavLink>
+              <Link to={'/blog-standard'}>Smarter Business Security </Link>
             </h3>
             <p>
               Ecommerce Agency London. Quality Results in 1 Minute or Less!
@@ -23,9 +23,9 @@ const Blog = (props) => {
               <span className="wariter"> 10 july 2020</span>
               <span className="wariter"> Md Sahil</span>
             </div>
-            <NavLink to={props.bloglink}>
-              Read More <FaArrowRight />
-            </NavLink>
+
+
+            <Link to={"/blog-standard"}> Read More <FaArrowRight /> </Link>
           </div>
         </div>
       </div>

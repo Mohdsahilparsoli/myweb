@@ -1,23 +1,4 @@
 
-
-
-
-
-
-
-
-/*----------------------------------------
-            general cssgeneral 
-------------------------------------------*/
-/* 
-body {
-  background-color: #040c18;
-} */
-/* ul,
-ol {
-  padding: 0;
-  margin: 0;
-} */
 @media (max-width: 1920px) {
   #openmenu {
     display: none;
